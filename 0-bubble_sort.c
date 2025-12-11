@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "sort.h"
 /**
- * bubble_sort - Sorts an array of integers in ascendin gorder
+ * bubble_sort - Sorts an array of integers in ascending order
  * using the Bubble sort algorithm
  * @array: pointer to the array of integers to sort
  * @size: size of the array
@@ -21,9 +21,9 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[j] > array[j + 1])
 			{
-				tmp = array[j];
+				temp = array[j];
 				array[j] = array[j + 1];
-				array[j + 1] = tmp;
+				array[j + 1] = temp;
 				for (k = 0; k < size; k++)
 				{
 					if (k > 0)
@@ -32,7 +32,7 @@ void bubble_sort(int *array, size_t size)
 					}
 					printf("%d", array[k]);
 				}
-				print("\n");
+				printf("\n");
 			}
 		}
 	}
